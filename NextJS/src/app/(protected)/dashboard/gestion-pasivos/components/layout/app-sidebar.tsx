@@ -1,5 +1,5 @@
 "use client";
-import { ArrowsLeftRight, Medal, ChartBar, BookOpenText, CaretDown, CaretRight, UserCircle, ChartLine, House, IdentificationCard, List, ListChecks, type Icon, Person, User } from "@phosphor-icons/react";
+import { Swap, Barcode, ChartBar, BookOpenText, CaretDown, CaretRight, UserCircle, ChartLine, House, IdentificationCard, List, ListChecks, type Icon, Person, Users } from "@phosphor-icons/react";
 
 import {
   Sidebar,
@@ -51,7 +51,7 @@ const items: MenuItem[] = [
     },
     title: "Personal Jubilado/Pasivo",
     url: "#",
-    icon: User,
+    icon: Users,
     subMenu: [
       {
         title: "Registrar",
@@ -98,12 +98,12 @@ const items: MenuItem[] = [
     },
     title: "Gestión De Codigos",
     url: "#",
-    icon: Medal,
+    icon: Barcode,
     subMenu: [
       {
         title: "Crear Nuevo Código",
         url: "/dashboard/gestion-pasivos/cargos/crear-codigo",
-        icon: Medal,
+        icon: Barcode,
         permission: {
           roleAccept: ["ADMINISTRADOR"],
           departmentAccept: ["RAC"],
@@ -127,7 +127,7 @@ const items: MenuItem[] = [
     },
     title: "Movimientos",
     url: "#",
-    icon: ArrowsLeftRight,
+    icon: Swap,
     subMenu: [
       {
         title: "Cambiar Estatus",

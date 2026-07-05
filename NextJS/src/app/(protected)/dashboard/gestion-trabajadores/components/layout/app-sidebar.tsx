@@ -1,5 +1,5 @@
 "use client";
-import { SignOut, ArrowsLeftRight, Medal, ChartBar, BookOpenText, LockKey, Briefcase, CaretDown, CaretRight, UserCircle, Crosshair, DoorOpen, ChartLine, House, IdentificationCard, List, ListChecks, ArrowDownRight, Notebook, Signpost, User, UserPlus, type Icon, FolderOpen, Cube } from "@phosphor-icons/react";
+import { SignOut, Swap, Barcode, ChartBar, BookOpenText, ChatsCircle, Briefcase, CaretDown, CaretRight, UserCircle, Crosshair, DoorOpen, ChartLine, House, IdentificationCard, List, ListChecks, ArrowDownRight, Notebook, Signpost, Users, UserPlus, type Icon, Cube } from "@phosphor-icons/react";
 
 import {
   Sidebar,
@@ -60,7 +60,7 @@ const items: MenuItem[] = [
     },
     title: "Personal Trabajador",
     url: "#",
-    icon: User,
+    icon: Users,
     subMenu: [
       {
         title: "Agregar Trabajador",
@@ -154,12 +154,12 @@ const items: MenuItem[] = [
     },
     title: "Gestión De Codigos",
     url: "#",
-    icon: Medal,
+    icon: Barcode,
     subMenu: [
       {
         title: "Crear Nuevo Código",
         url: "/dashboard/gestion-trabajadores/cargos/crear-codigo",
-        icon: Medal,
+        icon: Barcode,
         permission: {
           roleAccept: ["ADMINISTRADOR"],
           departmentAccept: ["RAC"],
@@ -183,7 +183,7 @@ const items: MenuItem[] = [
     },
     title: "Movimientos",
     url: "#",
-    icon: ArrowsLeftRight,
+    icon: Swap,
     subMenu: [
       {
         title: "Asignar Cargo",
@@ -280,7 +280,7 @@ const items: MenuItem[] = [
       {
         title: "Consultar Cargos",
         url: "/dashboard/gestion-trabajadores/reportes/codigos",
-        icon: LockKey,
+        icon: ListChecks,
         permission: {
           roleAccept: ["ANALISTA", "ADMINISTRADOR"],
           departmentAccept: ["RAC"],
@@ -293,7 +293,7 @@ const items: MenuItem[] = [
       roleAccept: ["ADMINISTRADOR"],
       departmentAccept: ["RAC"],
     },
-    icon: FolderOpen,
+    icon: ChatsCircle,
     title: "Retroalimentación",
     url: "/dashboard/gestion-trabajadores/retroalimentacion",
   },
